@@ -18,3 +18,19 @@ Auth::routes();
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+
+/*------------------Dashboard*----------------------*/
+Route::get('/dashboard', function () {
+    return view('backend.index');
+});
+
+Route::get('/dashboard/browse/', function () {
+    return view('backend.browse');
+});
+
+Route::get('/dashboard/artist/', function () {
+    return view('backend.artist');
+});
+/*-------------------------------------------------*/
