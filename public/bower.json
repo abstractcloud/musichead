@@ -1,0 +1,24 @@
+{
+  "name": "musichead",
+  "homepage": "https://github.com/abstractcloud/musichead",
+  "authors": [
+    "Vladimir <binary.cloud9@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "keywords": [
+    "music"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "bootstrap": "^3.3.7"
+  }
+}
