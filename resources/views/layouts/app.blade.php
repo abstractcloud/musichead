@@ -10,11 +10,7 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
-    <!-- Styles -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300" rel="stylesheet">
-    <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="/css/dashboard.css" rel="stylesheet">
+    @include('layouts.partials.styles')
 </head>
 <body>
     <div id="app">
@@ -28,9 +24,10 @@
                 </div>
             </div>
         </div>
+
+        @include('layouts.partials.player')
     </div>
 
-    <!-- Scripts -->
-    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    @include('layouts.partials.scripts')
 </body>
 </html>
