@@ -26,11 +26,15 @@ Route::get('/dashboard', function () {
     return view('backend.index');
 });
 
-Route::get('/dashboard/browse/', function () {
-    return view('backend.browse');
+Route::get('/dashboard/browses/', function () {
+    return view('backend.browses');
 });
 
-Route::get('/dashboard/artist/', function () {
-    return view('backend.artist');
+Route::get('/dashboard/artists/', function () {
+    return view('backend.artists');
+});
+
+Route::get('/dashboard/artists/create', function () {
+    return view('backend.add-artist');
 });
 /*-------------------------------------------------*/

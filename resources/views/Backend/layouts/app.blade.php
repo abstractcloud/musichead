@@ -13,5 +13,6 @@
          @yield('content')
       </div>
     </div>
+    @include('backend.layouts.partials.scripts')
 </body>
 </html>
