@@ -1,0 +1,38 @@
+.body{
+	background-color: #999;
+}
+.costom-but{
+	background-color: lightblue !important;
+	color: #444 !important;
+	margin-top: 10px !important;
+}
+.back-but{
+	background-color: white !important;
+	color: #444 !important;
+}
+.costom-but:hover {
+	background-color: white !important;
+	color: #333 !important;
+	box-shadow: inset;
+}
+.container{
+	margin-top: 7%;
+}
+.panel-heading{
+	background-color: white;
+}
+.panel-body{
+	padding: 15px 40px !important;
+}
+.error{
+	list-style-type: none; 
+}
+.error-block{
+	border-radius: 3px;
+}
+.control-label{
+	margin-bottom: 3px !important;
+}
+.but-marg{
+	margin-top: 10px !important;
+}

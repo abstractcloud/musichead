@@ -11,13 +11,13 @@
 |
 */
 
-Route::get('/', 'DefaultController@index')->name('default');
+Route::get('/', 'DefaultController@index')->name('home');
 
 Auth::routes();
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home2');
 
 
 
@@ -38,3 +38,11 @@ Route::get('/dashboard/artists/create', function () {
     return view('backend.add-artist');
 });
 /*-------------------------------------------------*/
+
+/*------------------Auth*----------------------*/
+Route::get('/registration', 'RegistrationController@create');
+Route::post('/registration', 'RegistrationController@store')->name('reg');
+
+Route::get('/login', 'LoginController@create');
+Route::post('/sessions', 'LoginController@store')->name('sessions');
+Route::get('/logout', 'LoginController@destroy');
