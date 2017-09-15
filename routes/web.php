@@ -38,3 +38,8 @@ Route::get('/dashboard/artists/create', function () {
     return view('backend.add-artist');
 });
 /*-------------------------------------------------*/
+
+/*------------------profile-----start---------------*/
+Route::get('/profile', 'ProfileController@index');
+
+/*------------------profile-----end-----------------*/
