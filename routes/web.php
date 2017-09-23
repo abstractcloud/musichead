@@ -11,17 +11,8 @@
 |
 */
 
-Route::get('/', 'DefaultController@index')->name('default');
+Route::get('/', 'DefaultController@index')->name('home');
 
-Auth::routes();
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-
-
-/*------------------Dashboard*----------------------*/
 Route::get('/dashboard', function () {
     return view('backend.index');
 });
@@ -37,9 +28,12 @@ Route::get('/dashboard/artists/', function () {
 Route::get('/dashboard/artists/create', function () {
     return view('backend.add-artist');
 });
-/*-------------------------------------------------*/
 
-/*------------------profile-----start---------------*/
 Route::get('/profile', 'ProfileController@index');
 
-/*------------------profile-----end-----------------*/
+Route::get('/registration', 'RegistrationController@create');
+Route::post('/registration', 'RegistrationController@store')->name('reg');
+
+Route::get('/login', 'LoginController@create');
+Route::post('/sessions', 'LoginController@store')->name('sessions');
+Route::get('/logout', 'LoginController@destroy');
