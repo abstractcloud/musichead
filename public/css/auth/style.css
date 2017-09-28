@@ -8,6 +8,7 @@
 }
 .back-but{
 	background-color: white !important;
+	margin-bottom: 10px !important;
 	color: #444 !important;
 }
 .costom-but:hover {

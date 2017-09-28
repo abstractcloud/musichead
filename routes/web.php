@@ -31,9 +31,15 @@ Route::get('/dashboard/artists/create', function () {
 
 Route::get('/profile', 'ProfileController@index');
 
-Route::get('/registration', 'RegistrationController@create');
-Route::post('/registration', 'RegistrationController@store')->name('reg');
+Route::get('/registration', 'Auth\RegistrationController@create');
+Route::post('/registration', 'Auth\RegistrationController@store')->name('reg');
 
-Route::get('/login', 'LoginController@create');
-Route::post('/sessions', 'LoginController@store')->name('sessions');
-Route::get('/logout', 'LoginController@destroy');
+Route::get('/login', 'Auth\LoginController@create');
+Route::post('/sessions', 'Auth\LoginController@store')->name('sessions');
+Route::get('/logout', 'Auth\LoginController@destroy');
+
+Route::get('/password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm');
+Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');
+ 
+Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm');
+Route::post('password/reset', 'Auth\ResetPasswordController@reset')->name('password.request');

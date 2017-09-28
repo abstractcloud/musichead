@@ -48,6 +48,13 @@
 				</div>
 			</form>
 			<hr>
+			<a href="/password/reset">
+				<div>
+					<button class="form-control back-but"> 
+						Forgot password
+					</button>
+				</div>
+			</a>
 			<a href="/registration">
 				<div>
 					<button class="form-control back-but"> 
