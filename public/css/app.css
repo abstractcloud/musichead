@@ -11558,3 +11558,82 @@ h6 {
   height: 100px;
 }
 
+/*custom sm*/
+
+.col-sm-108,
+.col-sm-228,
+.col-sm-228add,
+.col-sm-368,
+.col-sm-368add {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 480px) {
+  .col-sm-108,
+  .col-sm-228,
+  .col-sm-228add {
+    float: left;
+  }
+
+  .col-sm-108 {
+    width: 108px;
+  }
+
+  .col-sm-228 {
+    width: 228px;
+  }
+
+  .col-sm-228add {
+    width: calc(100% - 228px);
+  }
+}
+
+@media (min-width: 984px) {
+  .col-sm-368,
+  .col-sm-368add {
+    float: left;
+  }
+
+  .col-sm-368 {
+    width: 368px;
+  }
+
+  .col-sm-368add {
+    width: calc(100% - 368px);
+  }
+}
+
+/*usr profile header*/
+
+.usrAvatarCont {
+  height: 228px;
+}
+
+.usrAvatar {
+  height: 180px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -90px;
+  margin-left: -90px;
+}
+
+.usrFunctBtn a {
+  border-radius: 1.8em;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.usrLibInf {
+  padding-top: 10px;
+}
+
+.usrInfoCont > .usrLibInf > p {
+  text-align: center;
+}
+
+/*usr profile body*/
+
