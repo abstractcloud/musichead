@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Auth;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 use App\User;
 
 class RegistrationController extends Controller
@@ -13,7 +14,7 @@ class RegistrationController extends Controller
     }
 	public function create()
 	{
-		return view('newAuth/reg/create');
+		return view('auth.register');
 	}
 	public function store()
 	{

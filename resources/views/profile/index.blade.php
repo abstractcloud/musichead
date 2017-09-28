@@ -10,7 +10,7 @@
 
         <div class="col-sm-228add usrInfoCont">
 
-            <h1 class="usrName">user name</h1>
+            <h1 class="usrName">{{ Auth::user()->name }}</h1>
             <p class="usrTitle">Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Proin eget tortor risus.</p>
 
             <div class="container-fluid usrFunctBtn">
