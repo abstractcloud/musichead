@@ -37,3 +37,5 @@ Route::post('/registration', 'RegistrationController@store')->name('reg');
 Route::get('/login', 'LoginController@create');
 Route::post('/sessions', 'LoginController@store')->name('sessions');
 Route::get('/logout', 'LoginController@destroy');
+
+Route::auth();

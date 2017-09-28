@@ -9,8 +9,8 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Laravel') }}</title>
-
-    @include('layouts.partials.styles')
+    <!-- Styles -->
+    <link href="/css/app.css" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -28,6 +28,7 @@
         @include('layouts.partials.player')
     </div>
 
-    @include('layouts.partials.scripts')
+    <!-- Scripts -->
+    <script src="/js/app.js"></script>
 </body>
 </html>
