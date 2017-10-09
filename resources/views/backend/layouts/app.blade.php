@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Musichead Dashboard</title>
-    @include('backend.layouts.partials.style')
+    <link href="/css/app.css" rel="stylesheet">
 </head>
 <body>
      @include('backend.layouts.partials.navbar')
@@ -13,6 +13,6 @@
          @yield('content')
       </div>
     </div>
-    @include('backend.layouts.partials.scripts')
+    <script src="/js/app.js"></script>
 </body>
 </html>

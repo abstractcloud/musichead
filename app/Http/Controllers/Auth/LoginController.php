@@ -14,6 +14,7 @@ class LoginController extends Controller
     public function create(){
 		return view('auth.login');
 	}
+    
 	public function store()
 	{
 		if(! auth()->attempt(request(['email', 'password']))){
@@ -24,6 +25,7 @@ class LoginController extends Controller
 		
 		return redirect()->home();
 	}
+    
 	public function destroy()
 	{
 		auth()->logout();
